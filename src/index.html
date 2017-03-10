@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <link rel="stylesheet" href="./content/bootstrap.css">
+    <link rel="stylesheet" href="./content/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Envyro</title>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                       
+                    </button>
+                <a class="header-size header-color navbar-brand" runat="server" href="~/">Envyro</a>
+            </div>
+        </div>
+    </div>
+    <!--End Header-->
+    <!--body-content-->
+    <div class="container-fluid">
+        <!--division quote-->
+        <div class="row top-margin">
+            <div class="col-md-12">
+                <p class="p-quote">"We do not inherit the earth from our ancestors, we borrow it from our children.."</p>
+            </div>
+        </div>
+        <hr style="margin:0">
+        <!--End division quote-->
+        <div class="row">
+            <div class="col-md-3 align-text div-right-border">
+                <div class="panel-heading">
+                    <p class="p-font">Pick the one you need</p>
+                </div>
+                <div class="panel">
+                    <img class="img-rounded" for="12inch" src="images/areca-nut-plates-250x250.jpg" width="200" height="200">
+                    <input class="checkbox-size" name="12inch" type="checkbox" />
+                </div>
+                <div class="panel">
+                    <img class="img-rounded" for="10inch"  src="images/areca-nut-plates-250x250.jpg" width="200" height="200">
+                    <input class="checkbox-size" name="10inch" type="checkbox" />
+                </div>
+                <div class="panel">
+                    <img class="img-rounded" for="8inch"  src="images/areca-nut-plates-250x250.jpg" width="200" height="200">
+                    <input class="checkbox-size" name="8inch" type="checkbox" />
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="panel-heading">
+                    <p class="p-font align-text">Tell us where to deliver</p>
+                </div>
+                <div class="">
+                    <!--form content-->
+                    <form class="form-horizontal" role="form">
+                        <div class="validation-summary-valid" data-valmsg-summary="true">
+                            <ul>
+                                <li style="display:none"></li>
+                            </ul>
+                        </div>
+                        <!--<div class="form-group">
+                            <label class="col-md-2 control-label" for="size">Size</label>
+                            <div class="col-md-2">
+                                <input class="form-control" id="size" name="size" type="text" value="" disabled="disabled">
+                            </div>
+                        </div>-->
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="quantity">Quantity</label>
+                            <div class="col-md-2">
+                                <input class="form-control" data-val="true" data-val-number="Quantity must be a number" data-val-required="Quantity is required"
+                                    id="quantity" name="quantity" type="text" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <label class="col-md-2 control-label" for="name">Name</label>
+                            <div class="col-md-8">
+                                <input id="name" class="form-control" data-val="true" data-val-required="Your Name is required."  name="name" type="text"
+                                    value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="phNumber">Phone Number</label>
+                            <div class="col-md-8">
+                                <input class="form-control" data-val="true" data-val-length="The Phone number must be 10 characters long." data-val-length-max="10"
+                                    data-val-length-min="10" data-val-required="Your Phone number is required" data-val-number="Phone Number must be number"
+                                    id="phNumber" name="phNumber" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="address">Address</label>
+                            <div class="col-lg-8">
+                                <textarea id="address" class="form-control" data-val="true" data-val-required="Your address is required to deliver items" id="address"
+                                    name="address" type="text"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="button" id="submit" class="btn btn-default" value="Submit Order">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--End form content-->
+            </div>
+        </div>
+        <!--End body-content-->
+        <!--Script section-->
+        <script src="./scripts/index.js"></script>
+        <script src="./scripts/jquery-1.10.2.min.js"></script>
+        <script src="./scripts/jquery.validate.min.js"></script>
+        <script src="./scripts/jquery.validate.unobtrusive.min.js"></script>
+        <!--End Script section-->
+</body>
+
+</html>

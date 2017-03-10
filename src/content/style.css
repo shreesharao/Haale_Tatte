@@ -1,0 +1,40 @@
+
+.validation-summary-errors{
+    color:#b94a48;
+}
+
+.top-margin { margin-top:5%; }
+
+.p-quote{
+    /*background-image: "images\bc.jpeg";*/
+    font-size: 24px;
+    font-family:consolas;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.align-text{
+    text-align: center;
+}
+.p-font{
+    font-weight:bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-size{
+    font-size: 25px;
+}
+.header-background{
+   background-color:  #428bca
+}
+.header-color{
+    color:white;
+}
+.div-right-border{
+    border-right: 0.5px solid gray;
+}
+
+.checkbox-size{
+    height:25px;
+    width: 25px;
+}
