@@ -15,11 +15,16 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                       
-                    </button>
+                 </button>
                 <a class="header-size header-color navbar-brand" runat="server" href="~/">Envyro</a>
             </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-cus hidden-xs" id="navbar-cus" style="padding-right:0px">
+                                <span class="lines"></span>
+                </button>
+            </div>
         </div>
+        
     </div>
     <!--End Header-->
     <!--body-content-->
@@ -42,11 +47,11 @@
                     <input class="checkbox-size" name="12inch" type="checkbox" />
                 </div>
                 <div class="panel">
-                    <img class="img-rounded" for="10inch"  src="images/areca-nut-plates-250x250.jpg" width="200" height="200">
+                    <img class="img-rounded" for="10inch" src="images/areca-nut-plates-250x250.jpg" width="200" height="200">
                     <input class="checkbox-size" name="10inch" type="checkbox" />
                 </div>
                 <div class="panel">
-                    <img class="img-rounded" for="8inch"  src="images/areca-nut-plates-250x250.jpg" width="200" height="200">
+                    <img class="img-rounded" for="8inch" src="images/areca-nut-plates-250x250.jpg" width="200" height="200">
                     <input class="checkbox-size" name="8inch" type="checkbox" />
                 </div>
             </div>
@@ -79,7 +84,7 @@
 
                             <label class="col-md-2 control-label" for="name">Name</label>
                             <div class="col-md-8">
-                                <input id="name" class="form-control" data-val="true" data-val-required="Your Name is required."  name="name" type="text"
+                                <input id="name" class="form-control" data-val="true" data-val-required="Your Name is required." name="name" type="text"
                                     value="">
                             </div>
                         </div>
@@ -93,14 +98,14 @@
                         </div>
                         <div class="form-group">
                             <label class="col-md-2 control-label" for="address">Address</label>
-                            <div class="col-lg-8">
-                                <textarea id="address" class="form-control" data-val="true" data-val-required="Your address is required to deliver items" id="address"
-                                    name="address" type="text"></textarea>
+                            <div class="col-md-8">
+                                <textarea id="address" class="form-control" data-val="true" data-val-required="Your address is required to deliver items"
+                                    id="address" name="address" type="text"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
-                                <input type="button" id="submit" class="btn btn-default" value="Submit Order">
+                                <input type="submit" id="submit" class="btn btn-default" value="Submit Order">
                             </div>
                         </div>
                     </form>

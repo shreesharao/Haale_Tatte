@@ -33,7 +33,7 @@ function AddEventListner(user) {
 
 function AddOrderToDatabase(order) {
     var databaseRef = database.ref().child('haale-tatte');
-    databaseRef.push().set(chat);
+    databaseRef.push().set(order);
 }
 
 // function CalculateTime(time) {
